@@ -1,0 +1,13 @@
+<h1>My CRM</h1>
+ 
+<ul>
+  <% for place in @places %>
+    <li>
+      <a href ="/places/<%= palce["id"]%>"><%= place["name"]%></a>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+  <a href ="/places/new">"New Company"</a>
+</p>
