@@ -1,0 +1,25 @@
+<h1>New Post</h1>
+
+<%= form_with :model => @contact do |form| %>
+  <p>
+    <%= form.label "action" %>
+    <%= form.text_field "action" %>
+  </p>
+  <p>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
+  </p>
+  <p>
+    <%= form.label "date" %>
+    <%= form.date_field "date" %>
+  </p>
+  <p>
+    <%= form.label "place_id" %>
+    <%= form.text_field "place_id" %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+  
+
+<% end %>

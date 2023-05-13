@@ -9,6 +9,7 @@ class PlacesController < ApplicationController
   def show
     # find a Place
     @place = Place.find_by({"id" =>params["id"]})
+    @posts = Post.where({"place_id"=> @place["id"]})
     # render places/show view with details about Place
   end
 
