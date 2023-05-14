@@ -1,17 +1,17 @@
 <h1>New Post</h1>
 
-<%= form_with :model => @contact do |form| %>
+<%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "action" %>
-    <%= form.text_field "action" %>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
   </p>
   <p>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
   </p>
   <p>
-    <%= form.label "date" %>
-    <%= form.date_field "date" %>
+    <%= form.label "posted_on" %>
+    <%= form.date_field "posted_on" %>
   </p>
   <p>
     <%= form.label "place_id" %>
